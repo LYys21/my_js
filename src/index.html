@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		hello hehe wds hhhhhhhhhhsafa sfas
+	</body>
+	<script src="JS/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+//		console.log($)
+		var i = 5;
+		$.ajax({
+			url:"https://localhost:8000/listmore?pageNo="+i+"&pageSize=15",
+			success:function(res){
+				console.log(res);
+				i++;
+				console.log(i);
+			}
+		});
+	</script>
+</html>
